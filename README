@@ -2,3 +2,7 @@ PowerSynth pkg: This contains files that are included into release package
 
 'bin' is binary excutables like fasthenry
 'man' is the manual location
+
+'MDK' is samples file for the technology library
+'ParaPower' is a snapshot of the ParaPower code base with PowerSynth modifications
+'work' contains example work folders with testing examples
