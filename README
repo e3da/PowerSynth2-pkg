@@ -1,0 +1,4 @@
+PowerSynth pkg: This contains files that are included into release package
+
+'bin' is binary excutables like fasthenry
+'man' is the manual location
