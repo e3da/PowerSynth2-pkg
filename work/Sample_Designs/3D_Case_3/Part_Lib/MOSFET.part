@@ -1,0 +1,14 @@
+Name CPM2-1200-0040B
+Type component
+Link https://uark.box.com/s/tbqr0ullsr1p52hu4hi8g4j9j8kpzl4c
+Footprint 3.10 5.90
+Thickness 0.18
+Material SiC
+Pins Drain Source Gate
+	Drain 0 0 3.10 5.90 B
+	Source 0.33 0.31 2.66 3.97 T
+	Gate 1.68 5.67 0.84 0.5 T
+Parasitics
+	Drain Source R:1e-4
+	Drain Gate R:1.1
+	Gate Source R:1.1

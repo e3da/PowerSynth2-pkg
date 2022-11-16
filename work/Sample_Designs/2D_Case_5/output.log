@@ -1,0 +1,22 @@
+['python', 'cmd.py', '-m', '/e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Sample_Designs/2D_Case_5/macro_script.txt', '-settings', '/e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Environment_Settings/settings_up.info']
+0 python
+1 cmd.py
+2 -m
+3 /e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Sample_Designs/2D_Case_5/macro_script.txt
+4 -settings
+5 /e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Environment_Settings/settings_up.info
+Loading settings file
+Settings loaded.
+loading material from csv
+/e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Environment_Settings/tech_lib/Material/Materials.csv
+This will change the default settings file location
+Loading macro file
+/e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Sample_Designs/2D_Case_5/macro_script.txt
+Jump to current working dir
+/e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Sample_Designs/2D_Case_5/
+Starting cornerstitch_API thermal interface
+Dectected 2D layout, using PEEC electrical model
+Min-size I1 42.2 39.4
+/e3da/tool/e3da/ubuntu20.04/ialrazi/testing/PowerSynth2.0/Environment_Settings/Parapower_json
+Added Solution_ 0 Perf_values:  {'Inductance': 14.757114242749607, 'Max_Temperature': 513.6087194344253}
+Perf_eval_time 59.48938536643982

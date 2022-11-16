@@ -1,0 +1,9 @@
+# Definition
+Wire ./Wire_Lib/bond_wire_info.wire
+
+# Table_info
+I1
+BW1 Wire D1_Source_B1 B3 1 0.1
+BW3 Wire D2_Source_B2 B4 1 0.1
+BW5 Wire D9_Source_B5 B7 1 0.1
+BW6 Wire D10_Source_B6 B8 1 0.1

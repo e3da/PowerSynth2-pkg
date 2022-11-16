@@ -1,0 +1,68 @@
+# Definition
+Via ./Part_Lib/Via1.part
+power_lead ./Part_Lib/power_lead1.part
+MOS ./Part_Lib/MOSFET1.part
+Wire ./Wire_Lib/bond_wire_info.wire
+# Via Connectivity Information
+I1 I2: V1 V2 V3 V4 V5
+# Layout Information
+I1 Z-
++ T1 power 15 7 14 6
+- T2 power 7 13 30 3 BW2 BW5 BW8
+	+ L2 power_lead 19 7.5
+	+ V1 Via 8 13.5
++ T4 signal 11 27 21 2.5 BW1 BW4 BW7
+- T5 signal 7 27 4 4.5
+	+ V2 Via 8 27.5
++ T6 signal 12 30 21 1.5 BW3 BW6 BW9
+- T7 signal 33 27 4 4.5
+	+ V3 Via 34 27.5
++ T3 power 7 16.5 30 9.5
+	+ L1 power_lead 7.25 21
+	+ D1 MOS 13.5 18 BW1 BW3 BW2
+	+ D3 MOS 19 18 BW4 BW6 BW5	
+	+ D5 MOS 25 18 BW7 BW9 BW8
++ T8 power 7 7 7.5 4.5
+	+ V4 Via 8 7.25
++ T9 power 29.5 7 7.5 4.5
+	+ V5 Via 34 7.25
+I2 Z+
++ T1 power 7 21.5 30 5 BW11 BW14 BW17
+- T7 power 15 26.5 14 5
+	+ L5 power_lead 7.25 22
++ T4 signal 11 9 21 1.5 BW10 BW13 BW16
+- T6 signal 7 7 4 3.5
+	+ V4 Via 8 7.25
++ T3 signal 12 7 21 1.5 BW12 BW15 BW18
+- T5 signal 33 7 4 3.5
+	+ V5 Via 34 7.25
++ T2 power 7 11.5 30 9.5
+	+ V1 Via 8 13.5
+	+ D2 MOS 15 13.5 R180 BW10 BW12 BW11
+	+ D4 MOS 21 13.5 R180 BW13 BW15 BW14
+	+ D6 MOS 27 13.5 R180 BW16 BW18 BW17
++ T8 power 7 27 7.5 4.5
+	+ V2 Via 8 27.5
++ T9 power 29.5 27 7.5 4.5
+	+ V3 Via 34 27.5
+# Connection Table Info
+I1
+Wire BW1 Y 1
+Wire BW2 Y 3
+Wire BW3 Y 1
+Wire BW4 Y 1
+Wire BW5 Y 3
+Wire BW6 Y 1
+Wire BW7 Y 1
+Wire BW8 Y 3
+Wire BW9 Y 1
+I2
+Wire BW10 Y 1
+Wire BW11 Y 3
+Wire BW12 Y 1
+Wire BW13 Y 1
+Wire BW14 Y 3
+Wire BW15 Y 1
+Wire BW16 Y 1
+Wire BW17 Y 3
+Wire BW18 Y 1
