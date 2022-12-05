@@ -16,7 +16,7 @@ Trace_Ori: ./Trace_Ori.txt
 # Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
 Reliability-awareness: 0
 New: 0
-Option: 2
+Option: 1
 Plot_Solution: 1
 Layout_Mode: 0
 Floor_plan: 37.5,37.5
