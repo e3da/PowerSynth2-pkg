@@ -928,11 +928,7 @@ classdef PPMatLib < matlab.mixin.Copyable
                     if ~all(ismember(NewName,PPMatObject.ValidChars))
                         obj.AddError(sprintf('Material name "%s" can contain only alphanumerics.',PPMatObject.Name))
                     else
-
-                        
-
                         %disp(sprintf('Material name changed from %s to %s\n',PPMatObject.Name, NewName));
-
                         PPMatObject.Name=NewName;
                     end
                 end
