@@ -1,0 +1,7 @@
+ID,Name,Origin,Width,Length,Thickness,Material,Type,Electrical
+1,C1,"0,0",37.5,37.5,0.255,None,a,C
+2,I1,"0,0",37.5,37.5,0.1,copper,p,S
+3,Ceramic1,"0,0",37.5,37.5,0.5,Al_N,p,D
+4,I2,"0,0",37.5,37.5,0.1,copper,p,S
+5,C2,"0,0",37.5,37.5,0.255,None,a,C
+6,Baseplate,"0,0",37.5,37.5,1.21,Air,p,G

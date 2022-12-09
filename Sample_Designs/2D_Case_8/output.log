@@ -1,0 +1,22 @@
+['python', 'cmd.py', '-m', '/nethome/ialrazi/PowerSynth_V2/PowerSynth2_Git_Repo/PowerSynth/test/2D_Case_8/macro_script.txt', '-settings', '/nethome/ialrazi/PS_2_test_Cases/settings_up.info']
+0 python
+1 cmd.py
+2 -m
+3 /nethome/ialrazi/PowerSynth_V2/PowerSynth2_Git_Repo/PowerSynth/test/2D_Case_8/macro_script.txt
+4 -settings
+5 /nethome/ialrazi/PS_2_test_Cases/settings_up.info
+Loading settings file
+Settings loaded.
+settings.PARAPOWER_FOLDER /nethome/ialrazi/PS_2_test_Cases/Parapower_json
+loading material from csv
+/nethome/ialrazi/PS_2_test_Cases/tech_lib/Material/Materials.csv
+This will change the default settings file location
+Loading macro file
+/nethome/ialrazi/PowerSynth_V2/PowerSynth2_Git_Repo/PowerSynth/test/2D_Case_8/macro_script.txt
+Jump to current working dir
+/nethome/ialrazi/PowerSynth_V2/PowerSynth2_Git_Repo/PowerSynth/test/2D_Case_8/
+Fixed_sized solution 0 40.0 50.0
+Fixed_sized solution 1 40.0 50.0
+Fixed_sized solution 2 40.0 50.0
+Fixed_sized solution 3 40.0 50.0
+Fixed_sized solution 4 40.0 50.0

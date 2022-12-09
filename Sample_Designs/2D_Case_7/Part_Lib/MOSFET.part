@@ -1,0 +1,14 @@
+Name CPM3-0900-0010A
+Type component
+Link https://uark.box.com/s/tbqr0ullsr1p52hu4hi8g4j9j8kpzl4c
+Footprint 4 5.7
+Thickness 0.18
+Material SiC
+Pins Drain Source Gate
+	Drain 0 0 4 5.7 B
+	Source 0.33 0.31 3 4.5 T
+	Gate 1.68 4.67 0.84 0.6 T
+Parasitics
+	Drain Source R:1e-4
+	Drain Gate R:1.1
+	Gate Source R:1.1

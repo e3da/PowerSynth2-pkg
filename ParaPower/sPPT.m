@@ -238,7 +238,11 @@ classdef sPPT < matlab.System
 
             %% Set up Timesteps
             if isempty(GlobalTime) || any(isnan(GlobalTime))
+<<<<<<< HEAD
                 disp('Time is empty or NaN, analysis will be static.')
+=======
+                disp('Time is empty, analysis will be static.')
+>>>>>>> PS2_backend
                 obj.GlobalTime=GlobalTime;  %overwrite stored GT
             else
                 % for transient, original implementation is GT is one

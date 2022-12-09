@@ -204,7 +204,11 @@ fFields=fields(Pout.Features(1));
 Fields=fields(Pin);
 for ThisField=reshape(Fields,1,[])
     ThisField=ThisField{1};
+<<<<<<< HEAD
     disp(['Converting fieldname "' ThisField,'"...'])
+=======
+    %disp(['Converting fieldname "' ThisField,'"...'])
+>>>>>>> PS2_backend
     if strcmpi(ThisField,'Features')
         for Fi=1:length(Pin.Features)
             ThisFeature=Pin.Features(Fi);

@@ -1,0 +1,81 @@
+# Definition
+power_lead ./Part_Lib/power_lead.part
+signal_lead ./Part_Lib/signal_lead.part
+MOS ./Part_Lib/MOSFET_current.part
+cap ./Part_Lib/capacitor.part
+# Layout Information
+I1 Z+
++ T1 power 6 6 44 8
+	+ L1 power_lead 7 7
+	+ B6 power 30 12 1 1
+	+ B8 power 35 12 1 1
+	+ B47 power 42 12 1 1
+	+ B48 power 48 12 1 1
++ T3 power 6 16 17 8
+- T2 power 14 24 9 23
+	+ D1 MOS 15 25 R270
+		+ B9 signal 16 26 1 1
+		+ B10 power 19 26 1 1
+		+ B17 signal 16 27 1 1
+	+ D2 MOS 15 30 R270
+		+ B11 signal 16 31 1 1
+		+ B12 power 19 31 1 1
+		+ B20 signal 16 32 1 1
+	+ D3 MOS 15 37 R270
+		+ B25 signal 16 38 1 1
+		+ B45 power 19 38 1 1
+		+ B46 signal 16 39 1 1
+	+ D4 MOS 15 42 R270
+		+ B26 signal 16 43 1 1
+		+ B27 power 19 43 1 1
+		+ B28 signal 16 44 1 1
+	+ L2 power_lead 7 17
++ C1 cap 15 14
++ T4 signal 6 25 3 22
+	+ L4 signal_lead 7 35
+	+ B18 signal 7 27 1 1
+	+ B19 signal 7 32 1 1
+	+ B29 signal 7 39 1 1
+	+ B30 signal 7 44 1 1
++ T5 signal 10 25 3 22
+	+ L5 signal_lead 11 35
+	+ B1 signal 11 31 1 1
+	+ B3 signal 11 26 1 1
+	+ B31 signal 11 38 1 1
+	+ B32 signal 11 43 1 1
++ T6 power 27 16 23 10
+- T7 power 24 16 3 31
+- T8 power 27 35 23 12
+	+ D5 MOS 28 17
+		+ B13 signal 30 21 1 1
+		+ B14 power 30 18 1 1
+		+ B22 signal 29 21 1 1
+	+ D6 MOS 33 17
+		+ B15 signal 35 21 1 1
+		+ B16 power 35 18 1 1
+		+ B24 signal 34 21 1 1
+	+ D7 MOS 40 17
+		+ B33 signal 42 21 1 1
+		+ B34 power 42 18 1 1
+		+ B35 signal 41 21 1 1
+	+ D8 MOS 45 17
+		+ B36 signal 48 21 1 1
+		+ B37 power 48 18 1 1
+		+ B38 signal 47 21 1 1
+	+ B4 power 25 26 1 1
+	+ B2 power 25 31 1 1
+	+ B39 power 25 38 1 1
+	+ B40 power 25 43 1 1
+	+ L3 power_lead 46 40
++ T9 signal 28 30 22 3
+	+ L7 signal_lead 38 31
+	+ B21 signal 29 31 1 1
+	+ B23 signal 34 31 1 1
+	+ B41 signal 41 31 1 1
+	+ B42 signal 47 31 1 1
++ T10 signal 28 26.5 22 3
+	+ L6 signal_lead 38 28
+	+ B5 signal 30 28 1 1
+	+ B7 signal 35 28 1 1
+	+ B43 signal 42 28 1 1
+	+ B44 signal 48 28 1 1
