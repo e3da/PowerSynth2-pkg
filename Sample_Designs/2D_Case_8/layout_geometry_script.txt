@@ -1,0 +1,46 @@
+# Definition
+power_lead ./Part_Lib/power_lead.part
+MOS ./Part_Lib/MOSFET.part
+signal_lead ./Part_Lib/signal_lead.part
+neutral_lead ./Part_Lib/neutral_lead.part
+# Layout Information
+I1 Z+
++ T1 power 2 2 10.0 10
+- T2 power 2 12 2 6
+- T3 power 2 18 14.5 8
+	+ B11 power 15.5 20 0.25 0.25
+	+ L1 power_lead 4 4
+	+ D1 MOS 3 19
+		+ B1 power 4 20 0.25 0.25
+		+ B2 power 6 20 0.25 0.25
+		+ B12 signal 4 24 0.25 0.25
+	+ D2 MOS 9 19
+		+ B4 power 10 20 0.25 0.25
+		+ B5 power 12 20 0.25 0.25
+		+ B13 signal 12 24 0.25 0.25
++ T4 power 5 13 37 3
+- T6 power 13 2 29 11
+	+ L2 neutral_lead 14 4
+	+ B3 power 7 15.5 0.25 0.25
+	+ B6 power 12 15.5 0.25 0.25
++ T7 power 17.5 17 24.5 9
+	+ L3 power_lead 34 18
+	+ D3 MOS 20 19
+		+ B7 power 20.5 20 0.25 0.25
+		+ B8 power 23 20 0.25 0.25
+		+ B15 signal 20.5 24 0.25 0.25
+	+ D4 MOS 26 19
+		+ B9 power 26.5 20 0.25 0.25
+		+ B10 signal 29 24 0.25 0.25
++ T9 signal 2 28 14.5 14
+	+ L4 signal_lead 4 29
+	+ B14 signal 4 28.5 0.25 0.25
+	+ B16 signal 12 28.5 0.25 0.25
++ T10 signal 17.5 28 14.5 14
+	+ L5 signal_lead 20.5 29
+	+ B18 signal 20.5 28.5 0.25 0.25
+	+ B19 signal 29 28.5 0.25 0.25
++ T11 signal 32.5 28 9.5 14
+	+ L6 signal_lead 34 29
+	
+
