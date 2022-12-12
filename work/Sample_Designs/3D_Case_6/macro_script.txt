@@ -2,7 +2,7 @@
 Layout_script: ./layout_geometry_script.txt
 Connectivity_script: ./bond_wires_setup.txt
 Layer_stack: ./layer_stack.csv
-Parasitic_model: default
+Parasitic_model: ./ARL_module.rsmdl
 Fig_dir: ./Figs
 Solution_dir: ./Solutions
 Constraint_file: ./constraint.csv

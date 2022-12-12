@@ -12,7 +12,7 @@ Trace_Ori: ./Trace_Ori.txt
 Reliability-awareness: 0
 New: 0
 Plot_Solution: 1
-Option: 1
+Option: 2
 Layout_Mode: 0
 Floor_plan: 40,50
 Num_of_layouts: 10
@@ -30,9 +30,9 @@ D2 1,0,0
 D3 1,0,0
 D4 1,0,0
 End_Device_Connection.
-Source: C1.top
-Sink: C1.bottom
-Frequency: 100000
+Source: L2
+Sink: L1
+Frequency: 10000
 End_Electrical_Setup.
 
 Thermal_Setup:

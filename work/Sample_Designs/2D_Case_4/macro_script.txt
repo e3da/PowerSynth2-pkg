@@ -22,7 +22,7 @@ Plot_Solution: 1
 Option: 2
 Layout_Mode: 0
 Floor_plan: 40,50
-Num_of_layouts: 5
+Num_of_layouts: 10
 Seed: 10
 # Algorithms options: "NG-RANDOM" or "NSGAII"
 Optimization_Algorithm: NG-RANDOM
