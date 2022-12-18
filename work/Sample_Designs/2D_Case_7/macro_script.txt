@@ -22,7 +22,7 @@ Plot_Solution: 1
 Option: 2
 Layout_Mode: 0
 Floor_plan: 40,50
-Num_of_layouts: 5
+Num_of_layouts: 10
 Seed: 10
 # Algorithms options: "NG-RANDOM"
 Optimization_Algorithm: NG-RANDOM
@@ -42,8 +42,8 @@ D2 1,0,0
 D9 1,0,0
 D10 1,0,0
 End_Device_Connection.
-Source: L2-L3
-Sink: L1-L4
+Source: L2
+Sink: L1
 Frequency: 1000 #kHz
 End_Electrical_Setup.
 
