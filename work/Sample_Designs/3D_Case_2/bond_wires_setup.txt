@@ -1,6 +1,6 @@
 # Definition
-Wire /nethome/ialrazi/PS_2_test_Cases/Regression_Test_Cases_PS2/Case_2/Wire_Lib/bond_wire_info.wire
-Via /nethome/ialrazi/PS_2_test_Cases/Regression_Test_Cases_PS2/Case_2/Part_Lib/Via.part
+Wire ./Wire_Lib/bond_wire_info.wire
+Via ./Part_Lib/Via.part
 
 # Table_info
 I1
