@@ -1,6 +1,5 @@
 # Input scipts:
 Layout_script: ./layout_geometry_script.txt
-Connectivity_script: None
 Layer_stack: ./layer_stack.csv
 Parasitic_model: default
 Fig_dir: ./Figs
