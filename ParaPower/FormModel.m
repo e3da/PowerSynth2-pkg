@@ -56,7 +56,7 @@ if isfield(TestCaseModel,'MatLib') || ~isempty(find(strcmpi(properties(TestCaseM
     end
 else
     WarnText=[WarnText 'MatLib needs to be included in the TestCaseModel structure' newline];
-    % msgbox('MatLib needs to be included in the TestCaseModel structure','Warning');
+    msgbox('MatLib needs to be included in the TestCaseModel structure','Warning');
     return
 end
 %[matprops, matlist, matcolors, kond, cte,E,nu,rho,spht]=matlibfun;
@@ -336,6 +336,13 @@ for Fi=1:length(Features)
          catch ErrTrap
              error(['"' Features(Fi).Q '" is not a valid function.'])
          end
+      elseif iscell(Features(Fi).Q) && length(Features(Fi).Q)==1
+         ThisQ=@(t)eval(Features(Fi).Q{1})*(-1);
+         try
+             ThisQ(0);
+         catch ErrTrap
+             error(['"' Features(Fi).Q '" is not a valid function.'])
+         end
      elseif isempty(Features(Fi).Q)
          ThisQ=[];
      elseif length(Features(Fi).Q(1,:))==2
@@ -426,14 +433,12 @@ MatsInUse=find(MatsInUse);
 
 for Fi=1:length(Features)
     MatNum=find(strcmpi(Features(Fi).Matl,MatLib.GetParam('Name')));
-    %disp(MatNum);
     if isempty(MatNum)
         MatNum=NaN;
         error('Feature %2.0f material %s is unknown',Fi,MatNum);
     end
     ModelMatrix(ModelMatrix==Fi*1i)=MatNum;
     FeatureMat=MatLib.GetMatNum(MatNum);
-    %disp(FeatureMat);
     if isprop(FeatureMat,'rho')
         FeatureMass(Fi)=FeatureVolume(Fi)*FeatureMat.rho; %in kg)
     else

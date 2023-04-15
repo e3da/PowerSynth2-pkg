@@ -238,9 +238,7 @@ classdef sPPT < matlab.System
 
             %% Set up Timesteps
             if isempty(GlobalTime) || any(isnan(GlobalTime))
-
-                disp('Time is empty, analysis will be static.')
-
+                %disp('Time is empty or NaN, analysis will be static.')
                 obj.GlobalTime=GlobalTime;  %overwrite stored GT
             else
                 % for transient, original implementation is GT is one
@@ -795,7 +793,7 @@ classdef sPPT < matlab.System
             
             %Indicator for static analysis, if steps is empty. Form Q vectors.
             if isempty(GlobalTime)||isnan(GlobalTime(2))
-                disp('Static Analysis');
+                %disp('Static Analysis');
                 %convert Q from function handle form to value at single time of Qtime
                 zer_eval=num2cell(zeros(nnz(Qmask),1));
                 Qval=cellfun(@feval,Q(Qmask),zer_eval);
