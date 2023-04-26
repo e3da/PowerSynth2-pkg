@@ -9,7 +9,7 @@ if __name__ == "__main__":
         print("----------------------PowerSynth 2 v2.0: GUI version------------------")
         PS2GUI().run()
     else:
-        from core.PS2Core import PS2Core
+        from core.PS2CLI import PS2CLI
         print("----------------------PowerSynth 2 v2.0: CLI version------------------")
-        PS2Core(sys.argv[1],sys.argv[2] if len(sys.argv)>2 else "").run()
+        PS2CLI(sys.argv[1],sys.argv[2] if len(sys.argv)>2 else "").run()
 
