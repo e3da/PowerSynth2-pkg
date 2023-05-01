@@ -1,7 +1,7 @@
 # PowerSynth 2 Release Series Package Repository
 ## Repository Overview
-This is the pkg repository for PowerSynth 2. Refer to the [PowerSynth2-src](https://github.com/e3da/PowerSynth2-src) and other related repos for the latest source code. 
-This repository contains additional data files, materials, test cases, and manuals used to prepare the release package. 
+This is the pkg repository for PowerSynth 2. Refer to the [PowerSynth2-core](https://github.com/e3da/PowerSynth2-core) and other related repos for the latest source code. 
+This repository contains additional data files, materials, pre-build models, test cases, and manuals used to prepare the release package. 
 
 ## PowerSynth 2 Installation Instructions
 PowerSynth 2 can be run from the source code directly. It is developed natively on Linux and then ported onto Windows. However, users need to configure environments and install all dependencies. For user convenience, we provide a self-contained package on [PowerSynth Release Website](https://e3da.csce.uark.edu/release/PowerSynth/) to run it out-of-the-box.
@@ -18,7 +18,7 @@ Three provided shortcuts are available to use. PowerSynth2-GUI starts the GUI ve
 A bundled PowerSynth2-CLI-Test2D5 shortcut automatically runs the Sample_Designs/2D_Case_5 for testing purposes. To change it to run a different macro script, you can change the shortcut property.
 
 For Linux:
-Unpack the tarball, and then set the path to include the bin folder. The main command is PowerSynth2.
+Unpack the provided tarball, and then set the path to include the bin folder. The main command is PowerSynth2.
 
 For first time runing, or if the installed matlab version is different, you need to use (the bundled) pip to install Matlab engine:
 pip install install matlabengine -t $PowerSynthRoot/lib/python3.10/site-packages/
