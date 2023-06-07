@@ -1,0 +1,13 @@
+# Definition
+Wire1 ./Wire_Lib/bond_wire_info.wire
+
+# Table_info
+I1
+BW1 Wire1 D1_Gate_B5 B9 1 0.1
+BW2 Wire1 D2_Gate_B7 B10 1 0.1
+BW3 Wire1 D1_Source_B6 B1 1 0.1
+BW4 Wire1 D2_Source_B8 B2 1 0.1
+BW5 Wire1 D3_Source_B13 B3 1 0.1
+BW6 Wire1 D4_Source_B15 B4 1 0.1
+BW7 Wire1 D3_Gate_B14 B11 1 0.1
+BW8 Wire1 D4_Gate_B16 B12 1 0.1

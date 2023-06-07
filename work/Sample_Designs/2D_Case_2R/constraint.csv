@@ -1,0 +1,61 @@
+Min Dimensions,EMPTY,power_trace,signal_trace,bonding wire pad,power_lead,signal_lead,MOS
+MinWidth,1,1,1,0,3,1,4
+MinLength,1,1,1,0,3,1,6
+MinHorExtension,1,1,1,0,3,1,4
+MinVerExtension,1,1,1,0,3,1,6
+MinHorEnclosure,EMPTY,power_trace,signal_trace,bonding wire pad,power_lead,signal_lead,MOS
+EMPTY,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+bonding wire pad,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MOS,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MinVerEnclosure,EMPTY,power_trace,signal_trace,bonding wire pad,power_lead,signal_lead,MOS
+EMPTY,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+bonding wire pad,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MOS,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MinHorSpacing,EMPTY,power_trace,signal_trace,bonding wire pad,power_lead,signal_lead,MOS
+EMPTY,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+bonding wire pad,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MOS,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MinVerSpacing,EMPTY,power_trace,signal_trace,bonding wire pad,power_lead,signal_lead,MOS
+EMPTY,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_trace,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+bonding wire pad,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+power_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+signal_lead,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+MOS,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+Voltage Specification,,,,,,,
+Component Name,DC magnitude,AC magnitude,Frequency (Hz),Phase angle (degree),,,
+T1.4,0,0,0,0,,,
+T2.4,7500,7500,10000,0,,,
+T5.4,7.5,12.5,1000000,0,,,
+T6.4,7507.5,7512.5,10000,0,,,
+T10.4,15000,0,0,0,,,
+Current Specification,,,,,,,
+Component Name,DC magnitude,AC magnitude,Frequency (Hz),Phase angle (degree),,,
+T1.4,15,0,0,0,,,
+T2.4,15,0,0,0,,,
+T5.4,0.01,0,0,0,,,
+T6.4,0.01,0,0,0,,,
+T10.4,15,0,0,0,,,
+Voltage Difference,Minimum Spacing,,,,,,
+0,2,,,,,,
+5000,3,,,,,,
+10000,4,,,,,,
+15000,5,,,,,,
+Current Rating,Minimum Width,,,,,,
+0,2,,,,,,
+5,2.5,,,,,,
+10,3,,,,,,
+15,3.5,,,,,,
