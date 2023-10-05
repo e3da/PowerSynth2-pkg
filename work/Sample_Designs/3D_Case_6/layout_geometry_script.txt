@@ -1,0 +1,55 @@
+# Definition
+Via ./Part_Lib/Via.part
+power_lead ./Part_Lib/power_lead.part
+signal_lead ./Part_Lib/signal_lead.part
+MOS ./Part_Lib/MOSFET.part
+# Via Connectivity Information
+V1 I1 I2
+# Layout Information
+I1 Z+
++ T1 power 7 7 28 6
+	+ B11 power 16 12.5 0.25 0.25
+	+ B29 power 28 12.5 0.25 0.25
+	+ L2 power_lead 8 8
+	+ V1 Via 21 9
++ T3 signal 7 25 28 2
+	+ B7 signal 16 25.5 0.25 0.25
+	+ B27 signal 28 25.5 0.25 0.25
+	+ L3 signal_lead 8 25.5
++ T4 signal 7 29 28 2
+	+ B8 signal 18 29.5 0.25 0.25
+	+ B28 signal 30 29.5 0.25 0.25
+	+ L4 signal_lead 8 29.5
++ T2 power 7 15 28 8
+	+ L1 power_lead 8 16
+	+ D1 MOS 15 16
+		+ B1 signal 16 19 0.25 0.25
+		+ B2 power 16 17 0.25 0.25
+		+ B3 power 18 17 0.25 0.25
+	+ D3 MOS 27 16
+		+ B24 signal 28 19 0.25 0.25
+		+ B25 power 30 17 0.25 0.25
+		+ B26 power 28 17 0.25 0.25
+I2 Z-
++ T1 power 7 7 8 24
+	+ B23 power 14 13.75 0.25 0.25
+	+ B35 signal 14 23.75 0.25 0.25
+	+ L5 power_lead 8 18
++ T3 signal 29 7 2 24
+	+ B19 signal 29.5 13.75 0.25 0.25
+	+ B33 signal 29.5 23.75 0.25 0.25
+	+ L7 signal_lead 29.5 29
++ T4 signal 33 7 2 24
+	+ B20 power 33.5 15.75 0.25 0.25
+	+ B34 power 33.5 25.75 0.25 0.25
+	+ L6 signal_lead 33.5 29
++ T2 power 17 7 10 24
+	+ V1 Via 21 9
+	+ D4 MOS 19 13 R90
+		+ B13 signal 24 13.75 0.25 0.25
+		+ B14 power 23.5 13.75 0.25 0.25
+		+ B15 power 23.5 15.75 0.25 0.25
+	+ D6 MOS 19 23 R90
+		+ B30 signal 24 23.75 0.25 0.25
+		+ B31 power 23.5 23.75 0.25 0.25
+		+ B32 power 23.5 25.75 0.25 0.25

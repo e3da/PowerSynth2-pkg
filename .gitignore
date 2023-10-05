@@ -1,0 +1,11 @@
+.*
+!/.gitignore
+!/.gitattributes
+!.gitkeep
+!/.project
+!/.pydevproject
+__pycache__/
+*.py[cod]
+*.va
+*_ui.py
+*.mat

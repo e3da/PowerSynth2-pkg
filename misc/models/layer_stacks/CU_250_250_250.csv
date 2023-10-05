@@ -1,0 +1,4 @@
+ID,Name,Width,Length,Thickness,Material,Type,Electrical
+1,M1,40,50,0.25,copper,p,G
+2,D1,40,50,0.25,Al_N,p,D
+3,I1,40,50,0.25,copper,p,S

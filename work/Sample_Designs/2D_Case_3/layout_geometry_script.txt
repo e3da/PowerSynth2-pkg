@@ -1,0 +1,46 @@
+# Definition
+power_lead ./Part_Lib/power_lead.part
+signal_lead ./Part_Lib/signal_lead.part
+MOS ./Part_Lib/MOSFET.part
+cap ./Part_Lib/capacitor.part
+Wire ./Wire_Lib/bond_wire_info.wire
+# Via Connectivity Information
+
+# Layout Information
+I1 Z+
++ T1 power 1 1 38 8 BW5 BW7
+	+ L1 power_lead 2 3
++ T3 power 1 33 17 16
+- T2 power 9 11 9 22
+	+ D1 MOS 11 15 R270 BW4 BW9 BW3
+	+ D2 MOS 11 25 R270 BW2 BW10 BW1
+	+ L2 power_lead 2 39
++ C1 cap 11 9
++ T4 signal 1 11 3 20 BW9 BW10
+	+ L4 signal_lead 2 23
++ T5 signal 5 11 3 20 BW2 BW4
+	+ L5 signal_lead 6 23
++ T6 power 22 11 17 9
+- T7 power 19 11 3 38 BW1 BW3
+- T8 power 22 33 17 16
+	+ D3 MOS 25 12 BW11 BW13 BW5
+	+ D4 MOS 32 12 BW12 BW14 BW7
+	+ L3 power_lead 35 39
++ T9 signal 25 27 13 3 BW13 BW14
+	+ L7 signal_lead 30 28
++ T10 signal 25 23 13 3 BW11 BW12
+	+ L6 signal_lead 30 24
+# Connection Table Info
+I1
+Wire BW1 X 2
+Wire BW3 X 2
+Wire BW2 X 1
+Wire BW4 X 1
+Wire BW9 X 1
+Wire BW10 X 1
+Wire BW5 Y 2
+Wire BW7 Y 2
+Wire BW11 Y 1
+Wire BW13 Y 1
+Wire BW12 Y 1
+Wire BW14 Y 1
