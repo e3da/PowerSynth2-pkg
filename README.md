@@ -6,24 +6,36 @@ This repository contains additional data files, materials, pre-build models, tes
 ## PowerSynth 2 Installation Instructions
 PowerSynth 2 can be run from the source code directly. It is developed natively on Linux and then ported onto Windows. However, users need to configure environments and install all dependencies. For user convenience, we provide a self-contained package on [PowerSynth Release Website](https://e3da.csce.uark.edu/release/PowerSynth/) to run it out-of-the-box.
 
-PowerSynth 2 requires Matlab to run [ParaPower](https://github.com/USArmyResearchLab/ParaPower) thermal model. The supported version is Python 3.10 and Matlab 2022b to use our provided package. Other versions may work, provided the user follows the installation instructions. 
-See [MathWorks](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html) for details. 
+PowerSynth 2 requires Matlab to run [ParaPower](https://github.com/USArmyResearchLab/ParaPower) thermal model. The package uses Python3.10 and assumes Matlab 2022b installed at default location. For non-default install location, edit the site-packages/matlab/engine/_arch.txt file within Lib or lib/python3.10 folder. Higher Matlab versions may work, provided the user installs the correct version of matlabengine.
+See [MathWorks](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html) for details about compatibility. 
 
-For Windows:
-Unpack the provided tarball to C:\PowerSynth2.0\. You will need to install Matlab 2022b to its default location.
-If the installed Matlab version is different, you will need to right-click pkg/misc/win/InstallMatlabEngine.ps1 and select 'run with PowerShell' to update the matlab engine. 
+### For Windows:
+Unpack the provided zip file to C:\PowerSynth2.0\. This path has to be exact, otherwise you need to follow the same conda-unpack process as in linux. Matlab default location (C:\Program Files\MATLAB\R2022b).
+
+For recent version of Matlab, right-click pkg/misc/win/InstallMatlabEngine.ps1 and select 'run with PowerShell' to update the matlab engine. 
 
 Three provided shortcuts are available to use. PowerSynth2-GUI starts the GUI version, PowerSynth2-CLI starts the PowerShell for CLI version. PowerSynth2-INT starts the CLI interactive version to create a macro file. 
 
-A bundled PowerSynth2-CLI-Test2D5 shortcut automatically runs the Sample_Designs/2D_Case_5 for testing purposes. To change it to run a different macro script, you can change the shortcut property.
+A bundled PowerSynth2-CLI-Test2D5 shortcut automatically runs the Sample_Designs/2D_Case_5 for testing purposes. To run a different macro, you can change the shortcut property.
 
-For Linux:
-Unpack the provided tarball, and then set the path to include the bin folder. The main command is PowerSynth2.
+### For Linux:
+Unpack the provided tarball, Matlab default location (/usr/local/MATLAB/R2022b).
+```
+tar -xzf PowerSynth2.0.tgz --one-top-level
+source PowerSynth2.0/bin/activate
+conda-unpack
 
-For first time runing, or if the installed matlab version is different, you need to use (the bundled) pip to install Matlab engine:
-pip install install matlabengine -t $PowerSynthRoot/lib/python3.10/site-packages/
+#Optional: for recent version of Matlab:
+pip install matlabengine -t PowerSynth2.0/lib/python3.10/site-packages/
+```
+To run PowerSynth, set the path to include the bin folder
+```
+export PATH=`realpath PowerSynth2.0/bin`:$PATH
+PowerSynth2
 
-For testing, a included bash script pkg/work/Sample_Designs/TestAll.sh will test all provided test cases. 
+#Optional: Test all provided cases:
+PowerSynth2.0/pkg/work/Sample_Designs/TestAll.sh
+```
 
 ## PowerSynth 2 Usage Information
 To start the GUI, use PowerSynth2 without any arguments. To use CLI, type PowerSynth2 followed by the macro script. If the file exists, it runs the macroscript, otherwise, it creates the macro script interactively. 
