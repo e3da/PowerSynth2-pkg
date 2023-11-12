@@ -1,0 +1,65 @@
+# Definition
+power_lead ./Part_Lib/power_lead.part
+signal_lead ./Part_Lib/signal_lead.part
+MOS ./Part_Lib/MOSFET.part
+cap ./Part_Lib/capacitor.part
+cap1 ./Part_Lib/capacitor1.part
+cap2 ./Part_Lib/capacitor2.part
+
+# Layout Information
+I1 Z+
++ T1 signal 55 10 40 8
+	+ B21 signal 60 16 0.25 0.25
+	+ B22 signal 71 16 0.25 0.25
+	+ L7 signal_lead 93 14
++ T2 signal 55 20 40 8
+	+ B1 signal 59 24 0.25 0.25
+	+ B2 signal 70 24 0.25 0.25
+	+ L1 signal_lead 93 22
++ T3 power 55 30 30 10
+- T11 power 85 30 10 35
+- T5 power 40 55 45 10
+	+ B5 power 59 57 0.25 0.25
+	+ B6 power 70 57 0.25 0.25
+	+ D1 MOS 58 32
+		+ B9 signal 59 33 0.25 0.25
+		+ B11 power 59 35 0.25 0.25
+		+ B23 signal 60 33 0.25 0.25
+	+ D2 MOS 68 32
+		+ B10 signal 70 33 0.25 0.25
+		+ B12 power 70 35 0.25 0.25
+		+ B24 signal 71 33 0.25 0.25
++ T12 power 85 72 10 29
+	+ L4 power_lead 87 90
++ C1 cap 85 65
++ T4 power 50 45 32 5
+- T9 power 40 10 10 40
+- T14 power 10 10 30 30
+	+ L2 power_lead 42 35
+	+ B3 power 59 47 0.25 0.25
+	+ B4 power 70 47 0.25 0.25
++ T6 power 50 70 32 10
+- T10 power 40 70 10 31
+- T15 power 10 80 30 21
+	+ L3 power_lead 42 80
+	+ D3 MOS 58 72
+		+ B13 power 59 73 0.25 0.25
+		+ B14 signal 59 75 0.25 0.25
+		+ B19 signal 60 75 0.25 0.25
+	+ D4 MOS 68 72
+		+ B15 power 70 73 0.25 0.25
+		+ B16 signal 70 75 0.25 0.25
+		+ B20 signal 71 75 0.25 0.25
++ T7 signal 55 82 27 8
+	+ B7 signal 59 83 0.25 0.25
+	+ B8 signal 70 83 0.25 0.25
+	+ L5 signal_lead 57 84
++ T8 signal 55 93 27 8
+	+ B17 signal 60 93.5 0.25 0.25
+	+ B18 signal 71 93.5 0.25 0.25
+	+ L6 signal_lead 57 94
++ C2 cap1 33 55
++ T13 power 10 55 23 10
++ C3 cap2 10 40
++ C4 cap2 10 65
+
