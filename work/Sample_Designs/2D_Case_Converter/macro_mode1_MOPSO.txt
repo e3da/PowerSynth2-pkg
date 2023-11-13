@@ -1,0 +1,71 @@
+# Input scripts:
+Layout_script: ./layout_geometry_script.txt
+Connectivity_script: ./bond_wires_setup.txt
+Layer_stack: ./layer_stack.csv
+Parasitic_model: default
+Fig_dir: ./Figs
+Solution_dir: ./Solutions
+Constraint_file: ./constraint.csv
+Model_char: ./Characterization
+Trace_Ori: ./Trace_ori.txt
+
+
+# Layout Generation Set up:
+# Options -- 0: layout generation, 1:single layout evaluation, 2:layout optimization
+# Layout Modes -- 0: minimum size, 1:variable size, 2:fixed size, 3:fixed size with fixed locations
+# if New ==1 constraint file is required to setup if ==0 constraint file will be reloaded
+# if Flexible_Wire==0: horizontal/vertical wire bond is considered, else: flexible connection is considered.
+# Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
+Reliability-awareness: 0
+New: 0
+Plot_Solution: 1
+Option: 2
+Layout_Mode: 1
+Floor_plan: 60,80
+# Num_of_layouts: The number of layout evaluation for optimization algorithms.
+# Optimization_Algorithm: "NG-RANDOM" or "NSGAII" or "MOPSO"
+# Num_of_init_population: The Number of initial population is considered for NSGAII and MOPSO.
+# The crossover_probability and mutaion_probability are considered for NSGAII. Note that the sumation of these 
+# probalities should equals to 1. The default value for NSGAII are 0.8 and 0.2 repectively.
+# Also, the mutaion_probability is considere for MOPSO which the default value is 0.1.
+# epsilon value is consdered for MOPSO. the default value is 0.005.
+Num_of_layouts: 200
+Seed: 10
+Optimization_Algorithm: MOPSO
+Num_of_init_population: 40
+crossover_probability: 0.8
+mutaion_probability: 0.1
+epsilon: 0.005
+
+# Model Setup
+# For macro mode, only support a single electrical measure and single thermal measure as objectives for optimization
+# 0 for resistance 1 for inductance
+
+Electrical_Setup:
+Measure_Name: Inductance
+Model_Type: PowerSynthPEEC
+Measure_Type: 1
+# Device Connection Table
+Device_Connection:
+D1 1,0,0
+D2 1,0,0
+D3 1,0,0
+D4 1,0,0
+End_Device_Connection.
+Source: L3
+Sink: L2
+Frequency: 1000 #kHz
+End_Electrical_Setup.
+
+
+Thermal_Setup:
+#Model : 2 (ParaPower)
+Model_Select: 2
+Measure_Name: Max_Temperature
+Selected_Devices: D1,D2,D3,D4
+Device_Power: 10,10,10,10
+Heat_Convection: 150.0
+Ambient_Temperature: 300.0
+End_Thermal_Setup.
+
+
