@@ -14,7 +14,7 @@ Reliability-awareness: 2
 New: 0
 Plot_Solution: 1
 Option: 2
-Layout_Mode: 0
+Layout_Mode: 1
 Num_of_layouts: 400
 Floor_plan: 30,60
 Seed: 10
