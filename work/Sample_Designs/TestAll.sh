@@ -2,7 +2,7 @@
 
 Dir=$(dirname "$0")
 
-for file in $Dir/*/macro_script.txt
+for file in $Dir/*/macro_*.txt
 do
 	PowerSynth2 $file
 done
