@@ -15,15 +15,12 @@ New: 0
 Plot_Solution: 1
 Option: 2
 Layout_Mode: 1
-Num_of_layouts: 400
+Num_of_layouts: 200
 Floor_plan: 30,60
 Seed: 10
 # Optimization_Algorithm: "NG-RANDOM" or "NSGAII" or "MOPSO"
 Optimization_Algorithm: NSGAII
-Num_of_init_population: 40
-crossover_probability: 0.8
-mutaion_probability: 0.2
-epsilon: 0.005
+Num_generations: 4
 
 Electrical_Setup:
 Model_Type: PEEC
