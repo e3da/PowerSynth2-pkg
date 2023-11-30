@@ -15,20 +15,10 @@ Option: 2
 Plot_Solution: 1
 Layout_Mode: 2
 Floor_plan: 37.5,37.5
-# Num_of_layouts: The number of layout evaluation for optimization algorithms.
-# Optimization_Algorithm: "NG-RANDOM" or "NSGAII" or "MOPSO"
-# Num_of_init_population: The Number of initial population is considered for NSGAII and MOPSO.
-# The crossover_probability and mutaion_probability are considered for NSGAII. Note that the sumation of these 
-# probalities should equals to 1. The default value for NSGAII are 0.8 and 0.2 repectively.
-# Also, the mutaion_probability is considere for MOPSO which the default value is 0.1.
-# epsilon value is consdered for MOPSO. the default value is 0.005.
 Num_of_layouts: 200
 Seed: 10
 Optimization_Algorithm: NSGAII
-Num_of_init_population: 40
-crossover_probability: 0.8
-mutaion_probability: 0.2
-epsilon: 0.005
+Num_generations: 4
 
 # WORK IN PROGRESS
 # Model Setup
