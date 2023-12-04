@@ -14,11 +14,13 @@ Reliability-awareness: 2
 New: 0
 Plot_Solution: 1
 Option: 2
-Layout_Mode: 1
-Num_of_layouts: 5
+Layout_Mode: 0
+Num_of_layouts: 400
 Floor_plan: 30,60
 Seed: 10
+# Optimization_Algorithm: "NG-RANDOM" or "NSGAII" or "MOPSO"
 Optimization_Algorithm: NG-RANDOM
+Num_generations: 4
 
 Electrical_Setup:
 Model_Type: PEEC

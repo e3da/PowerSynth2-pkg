@@ -1,0 +1,57 @@
+# Input scripts:
+Layout_script: ./layout_geometry_script.txt
+Connectivity_script: ./bond_wires_setup.txt
+Layer_stack: ./layer_stack.csv
+Parasitic_model: default
+Fig_dir: ./Figs
+Solution_dir: ./Solutions
+Constraint_file: ./constraint.csv
+Model_char: ./Characterization
+Trace_Ori: ./Trace_Ori.txt
+
+Reliability-awareness: 0
+New: 0
+Option: 2
+Plot_Solution: 1
+Layout_Mode: 1
+Floor_plan: 37.5,37.5
+Num_of_layouts: 200
+Seed: 10
+Optimization_Algorithm: MOPSO
+Num_generations: 4
+
+# WORK IN PROGRESS
+# Model Setup
+# For macro mode, only support a single electrical measure and single thermal measure as objectives for optimization
+# 0 for resistance 1 for inductance
+
+Electrical_Setup:
+Model_Type: FastHenry
+Measure_Name: Inductance
+Measure_Type: 1
+# Device Connection Table
+Device_Connection:
+D1 1,0,0
+D2 1,0,0
+D3 1,0,0
+D4 1,0,0
+D5 1,0,0
+D6 1,0,0
+End_Device_Connection.
+Source: L5
+Sink: L1
+Frequency: 1000 #kHz
+End_Electrical_Setup.
+
+Thermal_Setup:
+# Model :  2 for ParaPower
+Model_Select: 2
+Measure_Name: Max_Temp
+Selected_Devices: D1,D2,D3,D4,D5,D6
+#Device_Power: 10,10,10,10,10,10
+Device_Power: 2.5,2.5,2.5,2.5,2.5,2.5
+Heat_Convection: 350,350
+Ambient_Temperature: 300
+End_Thermal_Setup.
+
+

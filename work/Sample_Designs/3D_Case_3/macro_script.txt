@@ -15,11 +15,10 @@ Option: 2
 Plot_Solution: 1
 Layout_Mode: 0
 Floor_plan: 37.5,37.5
-Num_of_layouts: 10
+Num_of_layouts: 200
 Seed: 10
-# Algorithms options: "NG-RANDOM", "NSGAII"
-Optimization_Algorithm: NG-RANDOM
-Num_generations: 30
+Optimization_Algorithm: NSGAII
+Num_generations: 4
 
 # WORK IN PROGRESS
 # Model Setup

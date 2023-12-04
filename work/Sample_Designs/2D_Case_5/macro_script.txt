@@ -22,10 +22,10 @@ Plot_Solution: 1
 Option: 2
 Layout_Mode: 0
 Floor_plan: 50,50
-Num_of_layouts: 10
+Num_of_layouts: 200
 Seed: 10
-# Algorithms options: "NG-RANDOM" or "NSGAII"
-Optimization_Algorithm: NG-RANDOM
+Optimization_Algorithm: NSGAII
+Num_generations: 4
 
 # Model Setup
 # For macro mode, only support a single electrical measure and single thermal measure as objectives for optimization
