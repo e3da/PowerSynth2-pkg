@@ -22,7 +22,7 @@ Plot_Solution: 1
 Option: 2
 Layout_Mode: 2
 Floor_plan: 40,50
-Num_of_layouts: 400
+Num_of_layouts: 60
 Seed: 10
 Optimization_Algorithm: NSGAII
 Num_generations: 4

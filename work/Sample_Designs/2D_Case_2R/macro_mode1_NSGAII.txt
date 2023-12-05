@@ -15,7 +15,7 @@ New: 0
 Plot_Solution: 1
 Option: 2
 Layout_Mode: 1
-Num_of_layouts: 200
+Num_of_layouts: 60
 Floor_plan: 30,60
 Seed: 10
 # Optimization_Algorithm: "NG-RANDOM" or "NSGAII" or "MOPSO"
