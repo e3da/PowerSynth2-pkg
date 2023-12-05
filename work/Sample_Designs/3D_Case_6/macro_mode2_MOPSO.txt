@@ -20,7 +20,7 @@ Option: 2
 Plot_Solution: 1
 Layout_Mode: 2
 Floor_plan: 30,30
-Num_of_layouts: 200
+Num_of_layouts: 60
 Seed: 10
 Optimization_Algorithm: MOPSO
 Num_generations: 4
