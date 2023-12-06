@@ -1,0 +1,43 @@
+name: PowerSynth2
+version: 2.1
+company: University of Arkansas
+
+channels:
+  - http://repo.anaconda.com/pkgs/main
+  - https://conda.anaconda.org/conda-forge
+specs:
+  - python 3.10*
+  - pip
+  - git
+  - networkx
+  - joblib
+  - seaborn
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib-base
+  - deap
+  - numba
+  - pydoe2
+  - pykrige
+  - psutil
+  - pyside6 6.5*
+  
+license_file: gpl-3.0.txt # [not unix]
+
+default_prefix: {{ environ["HOME"] }}/PowerSynth2 # [unix]
+default_prefix: {{ environ["USERPROFILE"] }}\PowerSynth2 # [win]
+
+script_env_variables:
+  pyvers: "3.10"
+  MatlabRoot: /e3da/dev/sdk/linux/matlab/R2022b # [unix]
+  
+  #gitorigin: ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/
+  gitbranch: dev
+  gitoption: ""
+
+post_install: post_install.sh # [unix]
+post_install: post_install.bat # [win]
+
+register_python: false # [win]
+icon_image: PS2.png # [win]
