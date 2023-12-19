@@ -2,9 +2,9 @@
 power_lead ./Part_Lib/power_lead.part
 signal_lead ./Part_Lib/signal_lead.part
 MOS ./Part_Lib/MOSFET.part
+induc ./Part_Lib/inductance.part
+induc1 ./Part_Lib/inductance1.part
 cap ./Part_Lib/capacitor.part
-cap1 ./Part_Lib/capacitor1.part
-cap2 ./Part_Lib/capacitor2.part
 
 # Layout Information
 I1 Z+
@@ -31,7 +31,7 @@ I1 Z+
 		+ B24 signal 71 33 0.25 0.25
 + T12 power 85 72 10 29
 	+ L4 power_lead 87 90
-+ C1 cap 85 65
++ C1 induc 85 65
 + T4 power 50 45 32 5
 - T9 power 40 10 10 40
 - T14 power 10 10 30 30
@@ -58,8 +58,8 @@ I1 Z+
 	+ B17 signal 60 93.5 0.25 0.25
 	+ B18 signal 71 93.5 0.25 0.25
 	+ L6 signal_lead 57 94
-+ C2 cap1 33 55
++ C2 induc1 33 55
 + T13 power 10 55 23 10
-+ C3 cap2 10 40
-+ C4 cap2 10 65
++ C3 cap 10 40
++ C4 cap 10 65
 
