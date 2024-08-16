@@ -46,7 +46,7 @@ pip install jmetalpy~=1.6.0 %pipoption% --no-deps -t "%PREFIX%\lib\site-packages
 
 echo "INFO: Creating executable and shortcuts"
 
-for %%f in ("%PREFIX%\pkg\misc\win\PowerSynth2.exe" "%PREFIX%\pkg\misc\win\PowerSynth2*.lnk") do copy /y %%f "%PREFIX%\"
+for %%f in ("%PREFIX%\pkg\misc\win\PowerSynth2.exe" "%PREFIX%\pkg\misc\win\PowerSynth2*.lnk") do copy /y "%%f" "%PREFIX%\"
 
 exit /b 0
 
