@@ -1,11 +1,16 @@
 #miniconda powershell prompt
 
 $Env:pyvers="3.10"
-$Env:PSVers="dev"
 
-$Env:gitorigin="ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/"
-$Env:gitbranch="dev"
+$Env:PSVers="2.1"
+$Env:gitbranch="v$Env:PSVers"
 $Env:gitoption=""
+
+#for dev branch only
+#$Env:PSVers="dev"
+
+#$Env:gitorigin="ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/"
+#$Env:gitbranch="dev"
 
 #conda env remove -y -n PowerSynth2-$Env:PSVers
 conda create -y -n PowerSynth2-$Env:PSVers python=$Env:pyvers
@@ -23,7 +28,7 @@ conda install -y networkx joblib seaborn numpy pandas scipy matplotlib-base   de
 if ($PSScriptRoot) {
 	$thisdir=$PSScriptRoot
 } else {
-	$thisdir="H:\P\PS2\constructor"
+	$thisdir="H:\git\PowerSynth\pkg\misc\constructor"
 }
 
 #post install script require matlab >2022b	

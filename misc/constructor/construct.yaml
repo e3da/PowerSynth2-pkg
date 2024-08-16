@@ -30,12 +30,16 @@ default_prefix: {{ environ["USERPROFILE"] }}\PowerSynth2 # [win]
 
 script_env_variables:
   pyvers: "3.10"
-  #for non-default matlab install, on e3da server
-  MatlabRoot: /e3da/dev/sdk/linux/matlab/R2022b # [unix]
+
+  gitbranch: "v2.1"
+  gitoption: ""
+
+  #for dev only:
+  #MatlabRoot: /e3da/dev/sdk/linux/matlab/R2022b # [unix]
   
   #gitorigin: ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/
   #gitbranch: dev
-  gitoption: ""
+
 
 post_install: post_install.sh # [unix]
 post_install: post_install.bat # [win]
