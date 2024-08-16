@@ -38,7 +38,7 @@ git clone -b %gitbranch% %gitoption% "%gitorigin%gui" "%PREFIX%\lib\site-package
 echo "INFO: Install Additional Packages"
 
 ::robocopy "%PREFIX%\pkg\lib\jmetal" "%PREFIX%\lib\site-packages\jmetal" /e
-pip install jmetalpy %pipoption% --no-deps -t "%PREFIX%\lib\site-packages"
+pip install jmetalpy~=1.6.0 %pipoption% --no-deps -t "%PREFIX%\lib\site-packages"
 
 ::No Longer Needed since v2.1
 ::mkdir "%PREFIX%\bin"

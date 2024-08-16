@@ -41,7 +41,7 @@ git clone -b $gitbranch $gitoption ${gitorigin}gui "$PREFIX/lib/python$pyvers/si
 echo "INFO: Install Additional Packages"
 
 #ln -sf ../../../pkg/lib/jmetal "$PREFIX/lib/python$pyvers/site-packages"
-pip install jmetalpy $pipoption --no-deps -t "$PREFIX/lib/python$pyvers/site-packages"
+pip install jmetalpy~=1.6.0 $pipoption --no-deps -t "$PREFIX/lib/python$pyvers/site-packages"
 
 echo "INFO: Creating executable and shortcuts"
 
