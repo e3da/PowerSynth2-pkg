@@ -10,6 +10,7 @@ Model_char: ./Characterization
 Trace_Ori: ./Trace_Ori.txt
 
 # Layout Generation Set up:
+Design_Type: Module
 Reliability-awareness: 2
 New: 0
 Plot_Solution: 1

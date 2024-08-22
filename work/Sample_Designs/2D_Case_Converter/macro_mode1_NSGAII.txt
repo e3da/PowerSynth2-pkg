@@ -15,6 +15,7 @@ Trace_Ori: ./Trace_ori.txt
 # if New ==1 constraint file is required to setup if ==0 constraint file will be reloaded
 # if Flexible_Wire==0: horizontal/vertical wire bond is considered, else: flexible connection is considered.
 # Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
+Design_Type: Module
 Reliability-awareness: 0
 New: 0
 Plot_Solution: 1
