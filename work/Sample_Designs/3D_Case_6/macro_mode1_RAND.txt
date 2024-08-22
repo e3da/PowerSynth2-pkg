@@ -14,6 +14,7 @@ Trace_Ori: ./Trace_Ori.txt
 # Layout Modes -- 0: minimum size, 1:variable size, 2:fixed size, 3:fixed size with fixed locations
 # if New ==1 constraint file is required to setup if ==0 constraint file will be reloaded
 # Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
+Design_Type: Module
 Reliability-awareness: 0
 New: 0
 Option: 2
@@ -40,7 +41,6 @@ D1 1,0,0
 D3 1,0,0
 D4 1,0,0
 D6 1,0,0
-D6 1,0,0
 End_Device_Connection.
 Source: L5
 Sink: L1
@@ -51,7 +51,7 @@ Thermal_Setup:
 # Model : 2 for ParaPower
 Model_Select: 2
 Measure_Name: Max_Temp
-Selected_Devices: D1,D3,D4, D6
+Selected_Devices: D1,D3,D4,D6
 Device_Power: 10,10,10,10
 Heat_Convection: 1000,1000
 Ambient_Temperature: 300
