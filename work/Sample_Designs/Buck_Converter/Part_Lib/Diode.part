@@ -1,0 +1,10 @@
+Name SR540
+Type Diode
+Link https://www.alldatasheet.com/datasheet-pdf/pdf/843485/DSK/SR540.html
+Footprint 5 9
+Thickness 10
+Material SiC
+Pins Anod Katod
+	Anod 2 1 1 1 T
+	Katod 2 7 1 1 T
+Vf 0.55

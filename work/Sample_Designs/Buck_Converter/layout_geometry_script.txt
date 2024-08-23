@@ -1,0 +1,70 @@
+# Definition
+Via ./Part_Lib/Via_2.part
+power_lead ./Part_Lib/power_lead.part
+signal_lead ./Part_Lib/SL.part
+Capacitor ./Part_Lib/Capacitor.part
+MOSFET ./Part_Lib/MOSFET.part
+Diode ./Part_Lib/Diode.part
+Inductance ./Part_Lib/Inductance.part
+Terminal ./Part_Lib/Terminal.part
+# Via Connectivity Information
+V1 I1 I2 Through
+V2 I1 I2 Through
+V3 I1 I2 Through
+V4 I1 I2 Through
+V5 I1 I2 Through
+V6 I1 I2 Through
+V7 I1 I2 Through
+V8 I1 I2 Through
+V9 I1 I2 Through
+V10 I1 I2 Through
+V11 I1 I2 Through
+V12 I1 I2 Through
+V13 I1 I2 Through
+V14 I1 I2 Through
+# Layout Information
+I1 Z-
++ T1 power 6 6 47 40
+	+ D1 MOSFET 10 25
+		+ V1 Via 11.5 12.5
+		+ V2 Via 17.5 12.5
+		+ V3 Via 23.5 12.5
+	+ D2 Inductance 30 10 
+		+ V4 Via 31 20
+		+ V5 Via 38 20
+	+ D3 Diode 17 10
+		+ V6 Via 18.5 18.5
+		+ V7 Via 21.5 18.5
+	+ D4 Capacitor 42 10
+		+ V8 Via 43.5 11
+		+ V9 Via 43.5 14
+	+ D5 Terminal 6.5 20
+		+ V10 Via 1 1
+	+ D6 Terminal 7 10
+		+ V11 Via 1 1
+	+ D7 Terminal 49 20
+		+ V12 Via 1 1
+	+ D8 Terminal 49 10
+		+ V13 Via 1 1
+I2 Z+
++ T1 power 6 7 47 6
+	+ V6 Via 1 1
+	+ V8 Via 1 1
+	+ V11 Via 1 1
+	+ V13 Via 1 1
++ T2 power 6 25 8 5
+- T8 power 6 20 6 5
+	+ V1 Via 11.5 12.5
+	+ V10 Via 1 1
++ T3 power 17 13.5 5 16
+- T4 power 22 18 12 6
+	+ V2 Via 17.5 12.5
+	+ V7 Via 34 27.5
+	+ V4 Via 9 27.5
++ T5 power 35 18 18 6
+- T6 power 43 13.5 6 4.5
+	+ V5 Via 14 27.5
+	+ V9 Via 42.5 24
+	+ V12 Via 1 1
++ T7 signal 23 26 5 3
+	+ V3 Via 23.5 12.5
