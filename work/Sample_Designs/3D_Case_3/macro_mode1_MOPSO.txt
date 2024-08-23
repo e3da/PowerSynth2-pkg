@@ -9,6 +9,7 @@ Constraint_file: ./constraint.csv
 Model_char: ./Characterization
 Trace_Ori: ./Trace_Ori.txt
 
+Design_Type: Module
 Reliability-awareness: 0
 New: 0
 Option: 2

@@ -1,0 +1,17 @@
+Name IRLZ34N
+Type MOSFET
+Link https://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720
+Footprint 16 6
+Thickness 10
+Material SiC
+Pins Drain Source Gate
+	Drain 1.5 2.5 1 1 T
+	Source 7.5 2.5 1 1 T
+	Gate 13.5 2.5 1 1 T
+Parasitics
+	Drain Source R:35e-3
+	Drain Gate R:1.1
+	Gate Source R:1.1
+Timing
+	tRise 100e-9
+	tFall 29e-9
