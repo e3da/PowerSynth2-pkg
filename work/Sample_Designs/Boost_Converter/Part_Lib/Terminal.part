@@ -1,0 +1,7 @@
+Name terminal
+Type Terminal
+Footprint 3 3
+Thickness 9.9
+Material copper
+Pins Positive 
+	Positive 1 1 T

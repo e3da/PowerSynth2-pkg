@@ -1,0 +1,17 @@
+Name IRF540
+Type MOSFET
+Link https://www.vishay.com/docs/91021/irf540.pdf
+Footprint 6 16
+Thickness 10
+Material SiC
+Pins Drain Source Gate
+	Drain 2.5 1.5 1 1 T
+	Source 2.5 7.5 1 1 T
+	Gate 2.5 13.5 1 1 T
+Parasitics
+	Drain Source R:77e-3
+	Drain Gate R:1.1
+	Gate Source R:1.1
+Timing
+	tRise 57e-9
+	tFall 40e-9

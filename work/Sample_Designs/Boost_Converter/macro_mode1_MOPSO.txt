@@ -1,0 +1,43 @@
+# Input scripts:
+Layout_script: ./layout_geometry_script_new.txt
+Layer_stack: ./layer_stack.csv
+Parasitic_model: default
+Fig_dir: ./Figs
+Solution_dir: ./Solutions
+Constraint_file: ./constraint.csv
+Model_char: ./Characterization
+Trace_Ori: ./Trace_Ori.txt
+
+# Layout Generation Set up:
+# Options -- 0: layout generation, 1:single layout evaluation, 2:layout optimization
+# Layout Modes -- 0: minimum size, 1:variable size, 2:fixed size, 3:fixed size with fixed locations
+# if New ==1 constraint file is required to setup if ==0 constraint file will be reloaded
+# Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
+# Design Info
+Design_Type: Converter
+Converter_Type: Boost
+Input_Voltage: 24
+Output_Voltage: 48
+Output_Current: 4.8
+Switching_Frequency: 200
+
+Reliability-awareness: 0
+New: 0
+Option: 2
+Plot_Solution: 1
+Layout_Mode: 1
+Floor_plan: 45,25
+Num_of_layouts: 100
+Seed: 10
+Optimization_Algorithm: MOPSO
+Num_generations: 4
+
+Thermal_Setup:
+# Model : 0 for TSFM or 1 for Analytical or 2 for ParaPower
+Model_Select: 2
+Measure_Name: Max_Temp
+Selected_Devices: D1,D2,D3,D4,D5,D6,D7,D8,D9
+Device_Power: 1,1,1,1,0,0,0,0,0
+Heat_Convection: 1000,20
+Ambient_Temperature: 298.15
+End_Thermal_Setup.

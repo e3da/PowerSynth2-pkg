@@ -1,0 +1,9 @@
+Name cap
+Type Capacitor
+Link https
+Footprint 6 6
+Thickness 10
+Material Al
+Pins Positive Negative
+	Positive 2.5 1 1 1 T
+	Negative 2.5 4 1 1 T
