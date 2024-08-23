@@ -3,11 +3,14 @@
 
 set pyvers=3.10
 set mlrel=2022b
-set PSVers=dev
-
-setenv gitorigin ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/
-setenv gitbranch dev
+setenv PSVers 2.2
+setenv gitbranch "v$PSVers"
 setenv gitoption ""
+
+#for dev only
+#setenv PSVers dev
+#setenv gitorigin ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/
+#setenv gitbranch dev
 
 ml dist/miniconda
 ml e3da/ialrazi/$PSVers
@@ -26,7 +29,7 @@ conda install -y networkx joblib seaborn numpy pandas scipy matplotlib-base   de
 
 #post install script require matlab >2022b
 setenv MatlabRoot "/e3da/dev/sdk/linux/matlab/R$mlrel"
-set thisdir=$HOME/P/PS2/constructor
+set thisdir=$HOME/git/PowerSynth/pkg/misc/constructor
 $thisdir/post_install.sh
 
 ####used for building Installer####

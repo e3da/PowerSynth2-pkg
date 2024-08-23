@@ -1,5 +1,5 @@
 name: PowerSynth2
-version: 2.1
+version: {{ environ["PSVers"] }}
 company: University of Arkansas
 
 channels:

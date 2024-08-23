@@ -2,7 +2,7 @@
 
 $Env:pyvers="3.10"
 
-$Env:PSVers="2.1"
+$Env:PSVers="2.2"
 $Env:gitbranch="v$Env:PSVers"
 $Env:gitoption=""
 
