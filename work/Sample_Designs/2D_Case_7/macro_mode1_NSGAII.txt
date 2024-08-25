@@ -34,7 +34,8 @@ Num_generations: 4
 
 Electrical_Setup:
 Measure_Name: Inductance
-Model_Type: PowerSynthPEEC
+Model_Type: Parasitic
+Module_Type: HB
 Measure_Type: 1
 # Device Connection Table
 Device_Connection:
