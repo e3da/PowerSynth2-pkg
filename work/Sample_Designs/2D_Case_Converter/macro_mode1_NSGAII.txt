@@ -33,7 +33,8 @@ Num_generations: 4
 
 Electrical_Setup:
 Measure_Name: Inductance
-Model_Type: PowerSynthPEEC
+Model_Type: Parasitic
+Converter_Type: Bidirectional
 Measure_Type: 1
 # Device Connection Table
 Device_Connection:

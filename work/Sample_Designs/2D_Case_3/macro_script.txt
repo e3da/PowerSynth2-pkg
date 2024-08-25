@@ -33,7 +33,8 @@ mutaion_probability: 0.2
 epsilon: 0.005
 
 Electrical_Setup:
-Model_Type: PEEC
+Model_Type: Parasitic
+Module_Type: HB
 Measure_Name: Inductance
 Measure_Type: 0
 # Device Connection Table

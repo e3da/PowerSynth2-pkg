@@ -13,13 +13,8 @@ Trace_Ori: ./Trace_Ori.txt
 # Layout Modes -- 0: minimum size, 1:variable size, 2:fixed size, 3:fixed size with fixed locations
 # if New ==1 constraint file is required to setup if ==0 constraint file will be reloaded
 # Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
-# Design Info
+ Design Info
 Design_Type: Converter
-Converter_Type: Buck
-Input_Voltage: 24
-Output_Voltage: 12
-Output_Current: 10
-Switching_Frequency: 200
 
 Reliability-awareness: 0
 New: 0
@@ -27,17 +22,33 @@ Option: 2
 Plot_Solution: 1
 Layout_Mode: 1
 Floor_plan: 55,30
-Num_of_layouts: 100
+Num_of_layouts: 20
 Seed: 10
 Optimization_Algorithm: MOPSO
-Num_generations: 5
+Num_generations: 4
+
+# WORK IN PROGRESS
+# Model Setup
+# For macro mode, only support a single electrical measure and single thermal measure as objectives for optimization
+# 0 for resistance 1 for inductance
+
+Electrical_Setup:
+#Model Type: Parasitic (module) vs Efficiency (converter)
+Model_Type: Efficiency
+Converter_Type: Buck
+Measure_Name: Eff%
+Input_Voltage: 24
+Output_Voltage: 12
+Output_Current: 10
+Frequency: 200 #kHz
+End_Electrical_Setup
 
 Thermal_Setup:
-# Model : 0 for TSFM or 1 for Analytical or 2 for ParaPower
+# Model : 0 for TSFM  (deprecated), 1 for Analytical  (deprecated), 2 for ParaPower (default), 3 for OpenFoam (experimental)
 Model_Select: 2
 Measure_Name: Max_Temp
 Selected_Devices: D1,D2,D3,D4,D5,D6,D7,D8
-Device_Power: 1,1,1,1,0,0,0,0
+Device_Power: 1,1,1,0.5,0,0,0,0
 Heat_Convection: 1000,20
 Ambient_Temperature: 298.15
 End_Thermal_Setup.

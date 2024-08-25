@@ -31,7 +31,8 @@ Num_generations: 4
 # 0 for resistance 1 for inductance
 
 Electrical_Setup:
-Model_Type: FastHenry
+Model_Type: Parasitic
+Module_Type: HB
 Measure_Name: Inductance
 Measure_Type: 1
 # Device Connection Table
