@@ -39,8 +39,8 @@ Model_Type: Efficiency
 Converter_Type: Boost
 Measure_Name: Eff%
 Input_Voltage: 24
-Output_Voltage: 12
-Output_Current: 10
+Output_Voltage: 48
+Output_Current: 4.8
 Frequency: 200 #kHz
 End_Electrical_Setup
 
@@ -48,8 +48,8 @@ Thermal_Setup:
 # Model : 0 for TSFM  (deprecated), 1 for Analytical  (deprecated), 2 for ParaPower (default), 3 for OpenFoam (experimental)
 Model_Select: 2
 Measure_Name: Max_Temp
-Selected_Devices: D1,D2,D3,D4,D5,D6,D7,D8
-Device_Power: 1,1,1,0.5,0,0,0,0
+Selected_Devices: D1,D2,D3,D4,D5,D6,D7,D8,D9
+Device_Power: 1,1,1,0.5,0,0,0,0,0
 Heat_Convection: 1000,20
 Ambient_Temperature: 298.15
 End_Thermal_Setup.
