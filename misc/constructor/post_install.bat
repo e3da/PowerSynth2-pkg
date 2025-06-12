@@ -22,23 +22,24 @@ if "%PREFIX%"=="" (set "PREFIX=%CONDA_PREFIX%")
 if not exist "%MatlabRoot%\VersionInfo.xml" for /f %%d in ('dir /b "%programfiles%\MATLAB"') do set "MatlabRoot=%programfiles%\MATLAB\%%d"
 if not exist "%MatlabRoot%\VersionInfo.xml" goto ErrMatlab
 
+echo "INFO: Install to PREFIX=%PREFIX% with MatlabRoot=%MatlabRoot%"
 for /f "delims=" %%l in ('findstr /c:"<version>" "%MatlabRoot%\VersionInfo.xml"') do set line=%%l
 if "%line%"=="" (goto ErrMatlab) else (set "mlvers=%line:~11,4%")
 
-echo "INFO: Install to PREFIX=%PREFIX% with MatlabRoot=%MatlabRoot%"
+echo "INFO: Install Additional Packages"
+for %%pkg in ("matlabengine==%mlvers%.*") do pip install %pipoption% "%pkg%" -t "%PREFIX%\lib\site-packages"
 
-pip install %pipoption% "matlabengine==%mlvers%.*" -t "%PREFIX%\lib\site-packages"
+for %%pkg in ("jmetalpy~=1.6.0") do pip install %pipoption% "%pkg%" --no-deps -t "%PREFIX%\lib\site-packages"
+
+if not exist "%PREFIX%\pkg" (
+	del /s /q "%PREFIX%\lib\site-packages\core" "%PREFIX%\pkg" "%PREFIX%\lib\site-packages\gui"
+)
 
 echo "INFO: Download %gitbranch% source code from %gitorigin%*"
 
 git clone -b %gitbranch% %gitoption% "%gitorigin%core" "%PREFIX%\lib\site-packages\core"
 git clone -b %gitbranch% %gitoption% "%gitorigin%pkg" "%PREFIX%\pkg"
 git clone -b %gitbranch% %gitoption% "%gitorigin%gui" "%PREFIX%\lib\site-packages\gui"
-
-echo "INFO: Install Additional Packages"
-
-::robocopy "%PREFIX%\pkg\lib\jmetal" "%PREFIX%\lib\site-packages\jmetal" /e
-pip install jmetalpy~=1.6.0 %pipoption% --no-deps -t "%PREFIX%\lib\site-packages"
 
 ::No Longer Needed since v2.1
 ::mkdir "%PREFIX%\bin"

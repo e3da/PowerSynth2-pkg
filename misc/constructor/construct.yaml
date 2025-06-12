@@ -12,7 +12,7 @@ specs:
   - networkx
   - joblib
   - seaborn
-  - numpy
+  - numpy 2.1*
   - pandas
   - scipy
   - matplotlib-base
@@ -25,13 +25,13 @@ specs:
   
 license_file: gpl-3.0.txt # [not unix]
 
-default_prefix: {{ environ["HOME"] }}/PowerSynth2 # [unix]
-default_prefix: {{ environ["USERPROFILE"] }}\PowerSynth2 # [win]
+default_prefix: "${HOME}/PowerSynth2" # [unix]
+default_prefix: "%USERPROFILE%\PowerSynth2" # [win]
 
 script_env_variables:
   pyvers: "3.10"
 
-  gitbranch: "v2.1"
+  gitbranch: {{ environ["gitbranch"] }}
   gitoption: ""
 
   #for dev only:

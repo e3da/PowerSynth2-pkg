@@ -4,32 +4,31 @@
 set pyvers=3.10
 set mlrel=2022b
 setenv PSVers 2.2
+
 setenv gitbranch "v$PSVers"
 setenv gitoption ""
 
 #for dev only
 #setenv PSVers dev
+if ("$PSVers" !~ [1-9]*) setenv gitbranch "$PSVers"
+
 #setenv gitorigin ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/
-#setenv gitbranch dev
 
 ml dist/miniconda
 ml e3da/ialrazi/$PSVers
 
 #conda env remove -y -n PowerSynth2
-conda create -y -n PowerSynth2 python=$pyvers
-
-#May need new solver
-#conda install -n base conda-libmamba-solver
+conda create -y --override-channels -c main -n PowerSynth2 python=$pyvers networkx joblib seaborn numpy=2.1 pandas scipy matplotlib-base psutil numba
 
 conda activate PowerSynth2
 
-#Install from channels: -c anaconda -c conda-forge
-setenv CONDA_SOLVER libmamba
-conda install -y networkx joblib seaborn numpy pandas scipy matplotlib-base   deap numba pydoe2 pykrige psutil pyside6=6.5
+conda install -y --override-channels -c conda-forge pyside6=6.5 deap pydoe2 pykrige
+
+#Allow interactive shell 
+if($?prompt) setenv MatlabRoot "/e3da/dev/sdk/linux/matlab/R$mlrel" && set thisdir=$HOME/git/PowerSynth/pkg/misc/constructor
+if(! $?prompt) set thisdir=`dirname $0`
 
 #post install script require matlab >2022b
-setenv MatlabRoot "/e3da/dev/sdk/linux/matlab/R$mlrel"
-set thisdir=$HOME/git/PowerSynth/pkg/misc/constructor
 $thisdir/post_install.sh
 
 ####used for building Installer####
