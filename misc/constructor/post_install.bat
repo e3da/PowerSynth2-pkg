@@ -27,9 +27,9 @@ for /f "delims=" %%l in ('findstr /c:"<version>" "%MatlabRoot%\VersionInfo.xml"'
 if "%line%"=="" (goto ErrMatlab) else (set "mlvers=%line:~11,4%")
 
 echo "INFO: Install Additional Packages"
-for %%pkg in ("matlabengine==%mlvers%.*") do pip install %pipoption% "%pkg%" -t "%PREFIX%\lib\site-packages"
+for %%p in ("matlabengine==%mlvers%.*") do pip install %pipoption% "%%p" -t "%PREFIX%\lib\site-packages"
 
-for %%pkg in ("jmetalpy~=1.6.0") do pip install %pipoption% "%pkg%" --no-deps -t "%PREFIX%\lib\site-packages"
+for %%p in ("jmetalpy~=1.6.0") do pip install %pipoption% "%%p" --no-deps -t "%PREFIX%\lib\site-packages"
 
 if not exist "%PREFIX%\pkg" (
 	del /s /q "%PREFIX%\lib\site-packages\core" "%PREFIX%\pkg" "%PREFIX%\lib\site-packages\gui"
