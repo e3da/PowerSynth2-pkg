@@ -1,5 +1,5 @@
 name: PowerSynth2
-version: {{ environ["PSVers"] }}
+version: {{ os.environ["PSVers"] }}
 company: University of Arkansas
 
 channels:
@@ -26,12 +26,12 @@ specs:
 license_file: gpl-3.0.txt # [not unix]
 
 default_prefix: "${HOME}/PowerSynth2" # [unix]
-default_prefix: "%USERPROFILE%\PowerSynth2" # [win]
+default_prefix: "%USERPROFILE%\\PowerSynth2" # [win]
 
 script_env_variables:
   pyvers: "3.10"
 
-  gitbranch: {{ environ["gitbranch"] }}
+  gitbranch: {{ os.environ['gitbranch'] }}
   gitoption: ""
 
   #for dev only:
