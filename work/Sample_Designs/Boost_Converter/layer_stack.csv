@@ -4,4 +4,3 @@ ID,Name,Origin,Width,Length,Thickness,Material,Type,Electrical
 3,I1,"0,0",60,60,0.02,Al_N,p,S
 4,I2,"0,0",60,60,0.2,copper,p,S
 5,Ceramic,"0,0",60,60,1,Air,p,D
-
