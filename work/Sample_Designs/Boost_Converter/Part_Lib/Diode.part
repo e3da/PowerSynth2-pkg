@@ -1,0 +1,10 @@
+Name SR5100
+Type Diode
+Link https://docs.rs-online.com/aeb7/0900766b814bbf71.pdf
+Footprint 9 5
+Thickness 10
+Material SiC
+Pins Anod Katod
+	Anod 1 2 1 1 T
+	Katod 7 2 1 1 T
+Rd 0.085

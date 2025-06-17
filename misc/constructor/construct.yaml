@@ -1,18 +1,18 @@
 name: PowerSynth2
-version: 2.1
+version: {{ os.environ['PSVers'] }}
 company: University of Arkansas
 
 channels:
   - http://repo.anaconda.com/pkgs/main
   - https://conda.anaconda.org/conda-forge
 specs:
-  - python 3.10*
+  - python {{ os.environ['PYVers'] }}*
   - pip
   - git
   - networkx
   - joblib
   - seaborn
-  - numpy
+  - numpy 2.1*
   - pandas
   - scipy
   - matplotlib-base
@@ -25,18 +25,18 @@ specs:
   
 license_file: gpl-3.0.txt # [not unix]
 
-default_prefix: {{ environ["HOME"] }}/PowerSynth2 # [unix]
-default_prefix: {{ environ["USERPROFILE"] }}\PowerSynth2 # [win]
+default_prefix: "${HOME}/PowerSynth2" # [unix]
+default_prefix: "%USERPROFILE%\\PowerSynth2" # [win]
 
 script_env_variables:
-  pyvers: "3.10"
+#on windows, pure number is treated as float, needs quote
+  PYVers: {{ '"'+os.environ['PYVers']+'"' }} 
 
-  gitbranch: "v2.1"
+  gitbranch: {{ '"'+os.environ['gitbranch']+'"' }}
   gitoption: ""
 
-  #for dev only:
+#for dev only:
   #MatlabRoot: /e3da/dev/sdk/linux/matlab/R2022b # [unix]
-  
   #gitorigin: ssh://peng-srv2.csce.uark.edu/data/project/PowerSynth/git/
   #gitbranch: dev
 

@@ -1,0 +1,11 @@
+Name induc
+Type Inductor
+Link https
+Footprint 10 20
+Thickness 10
+Material copper
+Pins Positive Negative
+	Positive 1.5 9.5 1 1 T
+	Negative 7.5 9.5 1 1 T
+L 8e-6
+Rl 40e-3

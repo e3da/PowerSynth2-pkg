@@ -9,6 +9,7 @@ Model_char: ./Characterization
 Trace_Ori: ./Trace_Ori.txt
 
 # Layout Generation Set up:
+Design_Type: Module
 Reliability-awareness: 0
 New: 0
 Plot_Solution: 1
@@ -21,7 +22,8 @@ Optimization_Algorithm: NSGAII
 Num_generations: 4
 
 Electrical_Setup:
-Model_Type: PEEC
+Model_Type: Parasitic
+Module_Type: HB
 Measure_Name: Inductance
 Measure_Type: 0
 # Device Connection Table

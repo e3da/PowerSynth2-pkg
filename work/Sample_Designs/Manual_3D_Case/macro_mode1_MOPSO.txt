@@ -13,6 +13,7 @@ Trace_Ori: ./Trace_Ori.txt
 # Layout Modes -- 0: minimum size, 1:variable size, 2:fixed size, 3:fixed size with fixed locations
 # if New ==1 constraint file is required to setup if ==0 constraint file will be reloaded
 # Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
+Design_Type: Module
 Reliability-awareness: 0
 New: 0
 Option: 2
@@ -25,7 +26,8 @@ Optimization_Algorithm: MOPSO
 Num_generations: 4
 
 Electrical_Setup:
-Model_Type: FastHenry
+Model_Type: Parasitic
+Module_Type: HB
 Measure_Name: Inductance
 Measure_Type: 1
 # Device Connection Table

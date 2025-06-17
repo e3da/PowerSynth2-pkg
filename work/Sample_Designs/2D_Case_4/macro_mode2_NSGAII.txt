@@ -17,6 +17,7 @@ Trace_Ori: ./Trace_Ori.txt
 # if Flexible_Wire==0: horizontal/vertical wire bond is considered, else: flexible connection is considered.
 # Reliability-awareness==0,1,2 #0: no reliability constraints, 1: worst case consideration, 2: average case
 Reliability-awareness: 0
+Design_Type: Module
 New: 0
 Plot_Solution: 1
 Option: 2
@@ -33,7 +34,8 @@ Num_generations: 4
 
 Electrical_Setup:
 Measure_Name: Inductance
-Model_Type: PowerSynthPEEC
+Model_Type: Parasitic
+Module_Type: HB
 Measure_Type: 1
 # Device Connection Table
 Device_Connection:
