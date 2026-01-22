@@ -1,3 +1,6 @@
+# Github Repo: https://github.com/FhG-IISB/ParaPowerPython
+# Developed by: Fraunhofer IISB
+
 import json
 from PPMatLib import PPMatLib
 from PPMatSolid import PPMatSolid

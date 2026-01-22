@@ -1,3 +1,7 @@
+# Modified from the original file, which can be found in https://github.com/USArmyResearchLab/ParaPower
+# Github Repo: https://github.com/FhG-IISB/ParaPowerPython
+# Developed by: Fraunhofer IISB
+
 import numpy as np
 import sys
 

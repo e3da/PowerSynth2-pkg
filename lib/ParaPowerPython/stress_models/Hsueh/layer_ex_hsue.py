@@ -1,3 +1,8 @@
+# Modified from the original file, which can be found in https://github.com/USArmyResearchLab/ParaPower
+# Github Repo: https://github.com/FhG-IISB/ParaPowerPython
+# Developed by: Fraunhofer IISB
+
+
 import numpy as np
 
 def layer_ex_Miner1(Resultsl, row, col, lay, dT, dzl, nlsubl, NLl, Ex, Ey, nux, nuy, ctex, ctey, Matl, Meltl):
