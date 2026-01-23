@@ -10,7 +10,6 @@ from utils import ConvertToPPTCM
 from SCPPT import ScPPT
 from FormModel import FormModel
 from PRResults import PPResults
-from stress_models.stress_hsue import Stress_Hsueh
 import os
 
 
@@ -256,6 +255,7 @@ def ParaPowerSynth(json_file, mode, type_, results_type):
             resobj = thermal_static(PSMI)
 
     elif mode == "stress":
+        raise NotImplementedError("Stress mode is not yet implemented.")
         if type_ == "static":
             resobj = stress_static(PSMI)
 
