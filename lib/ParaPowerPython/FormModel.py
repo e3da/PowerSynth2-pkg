@@ -254,7 +254,7 @@ def FormModel(TestCaseModel):
         InZ = GetInXYZ(Features[Fi]['z'], Z,)
         
         if len(np.unique(Features[Fi]["x"])) == 1:
-            UseLayer = GetZeroLayer(X, Features[Fi]["x"]).item()
+            UseLayer = GetZeroLayer(X, Features[Fi]["x"]) #.item()
             Plane = ModelMatrix[:,:,InX]
             PlaneUse = ModelMatrix[:,:,UseLayer]
             PlaneUse = PlaneUse.reshape(PlaneUse.shape[0],PlaneUse.shape[1],1)
@@ -262,7 +262,7 @@ def FormModel(TestCaseModel):
             Plane[nan_indices] = PlaneUse[nan_indices]
             ModelMatrix[:,:,InX] = Plane
         elif len(np.unique(Features[Fi]["y"])) == 1:
-            UseLayer = GetZeroLayer(Y, Features[Fi]["y"]).item()
+            UseLayer = GetZeroLayer(Y, Features[Fi]["y"]) #.item()
             Plane = ModelMatrix[:,:,InY]
             PlaneUse = ModelMatrix[:,:,UseLayer]
             PlaneUse = PlaneUse.reshape(PlaneUse.shape[0],PlaneUse.shape[1],1)
@@ -270,7 +270,7 @@ def FormModel(TestCaseModel):
             Plane[nan_indices] = PlaneUse[nan_indices]
             ModelMatrix[:,:,InY] = Plane
         elif len(np.unique(Features[Fi]["z"])) == 1:
-            UseLayer = GetZeroLayer(Z, Features[Fi]["z"]).item()
+            UseLayer = GetZeroLayer(Z, Features[Fi]["z"]) #.item()
             Plane = ModelMatrix[:,:,InZ]
             PlaneUse = ModelMatrix[:,:,UseLayer]
             PlaneUse = PlaneUse.reshape(PlaneUse.shape[0],PlaneUse.shape[1],1)
