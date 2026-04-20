@@ -39,6 +39,7 @@ Frequency: 100000
 End_Electrical_Setup.
 
 Thermal_Setup:
+Use_MATLAB: 0
 Model_Select: 2
 Measure_Name: Temperature
 Selected_Devices: D1,D2,D3,D4

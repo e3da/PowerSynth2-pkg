@@ -51,6 +51,7 @@ End_Electrical_Setup
 
 Thermal_Setup:
 # Model : 0 for TSFM or 1 for Analytical or 2 for ParaPower
+Use_MATLAB: 0
 Model_Select: 2
 Measure_Name: Max_Temp
 Selected_Devices: D1,D2,D3,D4,D5,D6

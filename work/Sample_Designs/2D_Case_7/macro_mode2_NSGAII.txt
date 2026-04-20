@@ -52,6 +52,7 @@ End_Electrical_Setup.
 
 Thermal_Setup:
 #Model : 2 (ParaPower)
+Use_MATLAB: 0
 Model_Select: 2
 Measure_Name: Max_Temperature
 Selected_Devices: D1,D2,D9,D10
